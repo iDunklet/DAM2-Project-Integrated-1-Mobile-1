@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         btnExit.setOnClickListener {
             finishAffinity()
         }
+
+        val btnStats = findViewById<Button>(R.id.btnstats)
+        btnStats.setOnClickListener {
+            startActivity(Intent(this, PythonActivity::class.java))
+        }
     }
     override fun onPause() {
         super.onPause()
