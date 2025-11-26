@@ -11,25 +11,34 @@ import com.chaquo.python.android.AndroidPlatform
 import java.io.File
 
 class PythonActivity : AppCompatActivity() {
-
     private lateinit var btnRunPython: Button
     private lateinit var tvOutput: TextView
+
     private lateinit var imgHistograma: ImageView
     private lateinit var imgScatter: ImageView
     private lateinit var imgPuntuacion: ImageView
+
+    // Nuevas imágenes
+    private lateinit var imgHeatmapRetorno: ImageView
+    private lateinit var imgBoxRecurrentes: ImageView
+    private lateinit var imgAciertosErroresRetorno: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.python_activity)
 
-        // Inicializar vistas
         btnRunPython = findViewById(R.id.btnRunPython)
         tvOutput = findViewById(R.id.tvOutput)
+
         imgHistograma = findViewById(R.id.imgHistograma)
         imgScatter = findViewById(R.id.imgScatter)
         imgPuntuacion = findViewById(R.id.imgPuntuacion)
 
-        // Inicializar Python si no está iniciado
+        // Nuevos
+        imgHeatmapRetorno = findViewById(R.id.imgHeatmapRetorno)
+        imgBoxRecurrentes = findViewById(R.id.imgBoxRecurrentes)
+        imgAciertosErroresRetorno = findViewById(R.id.imgAciertosErroresRetorno)
+
         if (!Python.isStarted()) {
             Python.start(AndroidPlatform(this))
         }
@@ -44,14 +53,18 @@ class PythonActivity : AppCompatActivity() {
             val py = Python.getInstance()
             val module = py.getModule("game_analysis")
 
-            // Pasar filesDir.absolutePath al script para que lea game_data.json y genere PNGs
             val result = module.callAttr("run", filesDir.absolutePath)
             tvOutput.text = "Script ejecutado correctamente: $result"
 
-            // Cargar imágenes generadas por Python desde filesDir
+            // Imágenes ya existentes
             loadImage("hist_session_length.png", imgHistograma)
             loadImage("scatter_errors_vs_aciertos.png", imgScatter)
             loadImage("bar_puntuacion_dificultad.png", imgPuntuacion)
+
+            // Nuevas imágenes
+            loadImage("heatmap_probabilidad_retorno.png", imgHeatmapRetorno)
+            loadImage("box_gameTime_recurrentes.png", imgBoxRecurrentes)
+            loadImage("bar_aciertos_errores_recurrentes.png", imgAciertosErroresRetorno)
 
         } catch (e: Exception) {
             tvOutput.text = "Error ejecutando Python: ${e.message}"
@@ -62,7 +75,7 @@ class PythonActivity : AppCompatActivity() {
     private fun loadImage(filename: String, imageView: ImageView) {
         val file = File(filesDir, filename)
         if (file.exists()) {
-            val drawable: Drawable? = Drawable.createFromPath(file.absolutePath)
+            val drawable = Drawable.createFromPath(file.absolutePath)
             imageView.setImageDrawable(drawable)
         } else {
             imageView.setImageDrawable(null)
