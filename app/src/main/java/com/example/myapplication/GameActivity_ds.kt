@@ -36,7 +36,7 @@ class GameActivity_ds : AppCompatActivity() {
     private lateinit var partida: UserGameData
     private lateinit var partidaActual: UserGameData
     private var countDownTimer: android.os.CountDownTimer? = null
-    private val ROUND_TIME_SECONDS: Long = 7
+    private val ROUND_TIME_SECONDS: Long = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -140,7 +140,6 @@ class GameActivity_ds : AppCompatActivity() {
     }
 
     private fun onAnswerSelected(selectedButton: Button) {
-        countDownTimer?.cancel()
         val question = gameQuestions[currentQuestionIndex]
         isAnswered = true
 
@@ -151,12 +150,17 @@ class GameActivity_ds : AppCompatActivity() {
             allContainers,
             question, this)
 
-        if (correct) score++
+        if (correct) {
+            score++
+        } else {
+            endGame()
+        }
 
         allButtons.forEach { it.isEnabled = false }
 
 
         btnNextRound.visibility = View.VISIBLE
+
 
         btnNextRound.text = if (correct) "¡CORRECTO! (Avanzando...)" else "FALLO. (Avanzando...)"
 
@@ -191,33 +195,32 @@ class GameActivity_ds : AppCompatActivity() {
     private fun startSimpleTimer() {
         countDownTimer?.cancel()
 
-        val totalTimeInMillis = ROUND_TIME_SECONDS * 1000
+        val totalTime = ROUND_TIME_SECONDS * 1000
 
-        countDownTimer = object : android.os.CountDownTimer(totalTimeInMillis, 1000) {
-
-
+        countDownTimer = object : android.os.CountDownTimer(totalTime, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                val secondsRemaining = millisUntilFinished / 1000
-                labelCuentaAtras.text = secondsRemaining.toString()
+                val seconds = millisUntilFinished / 1000
+                labelCuentaAtras.text = seconds.toString()
 
-                if (secondsRemaining <= 4) {
-                    onPause()
-                    labelCuentaAtras.setTextColor(ContextCompat.getColor(this@GameActivity_ds, R.color.state_error))
-                } else {
-                    onPause()
-                    labelCuentaAtras.setTextColor(ContextCompat.getColor(this@GameActivity_ds, R.color.faded_gold))
-                }
+                labelCuentaAtras.setTextColor(
+                    if (seconds <= 4)
+                        ContextCompat.getColor(this@GameActivity_ds, R.color.state_error)
+                    else
+                        ContextCompat.getColor(this@GameActivity_ds, R.color.faded_gold)
+                )
             }
 
             override fun onFinish() {
                 labelCuentaAtras.text = "0"
+
                 if (!isAnswered) {
                     allButtons.forEach { it.isEnabled = false }
                     onAnswerSelected(allButtons[0])
+                    endGame()
                 }
             }
-
         }.start()
+
     }
     override fun onPause() {
         super.onPause()

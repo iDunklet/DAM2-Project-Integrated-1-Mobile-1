@@ -26,6 +26,7 @@ class GameActivity_2 : AppCompatActivity() {
 
     private lateinit var gameMechanics: GameMechanics
     private lateinit var gameQuestions: List<PreguntaJuego>
+    private lateinit var allQuestions: List<PreguntaJuego>
     private var currentQuestionIndex = 0
     private var score = 0
     private var isAnswered = false
@@ -70,12 +71,14 @@ class GameActivity_2 : AppCompatActivity() {
 
 
 
+
         gameMechanics = GameMechanics(this)
 
-        val allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
 
         @Suppress("DEPRECATION", "UNCHECKED_CAST")
         jugador = (intent.getSerializableExtra("JUGADOR") as? Jugador)!!
+
+
 
         partidaActual = jugador.partidas.lastOrNull()!!
 
@@ -83,6 +86,11 @@ class GameActivity_2 : AppCompatActivity() {
         val rawRondas = partida.rondas
         val totalRondas = rawRondas.coerceIn(1, allQuestions.size)
 
+        if (this.partida.dificultad == 1) {
+             allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
+        } else {
+             allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel2.json")
+        }
 
         gameQuestions = allQuestions.shuffled().take(totalRondas)
         labelNumTotalRondas.text = totalRondas.toString()
