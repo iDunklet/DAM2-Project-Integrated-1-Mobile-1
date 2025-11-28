@@ -4,6 +4,7 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,8 +24,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val btnStart = findViewById<Button>(R.id.btnStart)
-        val btnExit = findViewById<Button>(R.id.btnExit)
+        val btnStart = findViewById<ImageButton>(R.id.btnStart)
+        val btnExit = findViewById<ImageButton>(R.id.btnExit)
         btnStart.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             finishAffinity()
         }
 
-        val btnStats = findViewById<Button>(R.id.btnstats)
+        val btnStats = findViewById<ImageButton>(R.id.btnstats)
         btnStats.setOnClickListener {
             startActivity(Intent(this, PythonActivity::class.java))
         }
