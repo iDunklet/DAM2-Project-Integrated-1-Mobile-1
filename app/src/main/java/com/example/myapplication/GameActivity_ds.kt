@@ -36,7 +36,7 @@ class GameActivity_ds : AppCompatActivity() {
     private lateinit var partida: UserGameData
     private lateinit var partidaActual: UserGameData
     private var countDownTimer: android.os.CountDownTimer? = null
-    private val ROUND_TIME_SECONDS: Long = 30
+    private val ROUND_TIME_SECONDS: Long = 7
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,7 +72,7 @@ class GameActivity_ds : AppCompatActivity() {
 
         gameMechanics = GameMechanics(this)
 
-        val allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
+        val allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel3.json")
 
         @Suppress("DEPRECATION", "UNCHECKED_CAST")
         jugador = (intent.getSerializableExtra("JUGADOR") as? Jugador)!!
@@ -182,7 +182,6 @@ class GameActivity_ds : AppCompatActivity() {
 
         val intent = Intent(this, GameOverActivity::class.java)
         intent.putExtra("JUGADOR", jugador)
-        intent.putExtra("PARTIDA", partida)
         startActivity(intent)
 
         btnNextRound.text = "FINALIZAR"
@@ -201,9 +200,11 @@ class GameActivity_ds : AppCompatActivity() {
                 val secondsRemaining = millisUntilFinished / 1000
                 labelCuentaAtras.text = secondsRemaining.toString()
 
-                if (secondsRemaining <= 10) {
+                if (secondsRemaining <= 4) {
+                    onPause()
                     labelCuentaAtras.setTextColor(ContextCompat.getColor(this@GameActivity_ds, R.color.state_error))
                 } else {
+                    onPause()
                     labelCuentaAtras.setTextColor(ContextCompat.getColor(this@GameActivity_ds, R.color.faded_gold))
                 }
             }
@@ -217,5 +218,11 @@ class GameActivity_ds : AppCompatActivity() {
             }
 
         }.start()
+    }
+    override fun onPause() {
+        super.onPause()
+        if (this::mediaPlayer.isInitialized && mediaPlayer.isPlaying) {
+            mediaPlayer.pause()
+        }
     }
 }

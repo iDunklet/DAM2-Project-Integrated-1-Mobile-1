@@ -103,6 +103,7 @@ class GameActivity_2 : AppCompatActivity() {
 
     private fun loadQuestion() {
         if (currentQuestionIndex >= gameQuestions.size) {
+            onPause()
             endGame()
             return
         }
@@ -173,8 +174,10 @@ class GameActivity_2 : AppCompatActivity() {
         btnNextRound.setOnClickListener { finish() }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        mediaPlayer.release()
+    override fun onPause() {
+        super.onPause()
+        if (this::mediaPlayer.isInitialized && mediaPlayer.isPlaying) {
+            mediaPlayer.pause()
+        }
     }
 }

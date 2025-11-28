@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
         val btnStart = findViewById<ImageButton>(R.id.btnStart)
 
-        val btnExit = findViewById<Button>(R.id.btnExit)
+        val btnExit = findViewById<ImageButton>(R.id.btnExit)
         btnStart.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
