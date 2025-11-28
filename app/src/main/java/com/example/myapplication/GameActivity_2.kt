@@ -83,14 +83,14 @@ class GameActivity_2 : AppCompatActivity() {
         partidaActual = jugador.partidas.lastOrNull()!!
 
         partida = partidaActual
-        val rawRondas = partida.rondas
-        val totalRondas = rawRondas.coerceIn(1, allQuestions.size)
 
         if (this.partida.dificultad == 1) {
              allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
         } else {
              allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel2.json")
         }
+        val rawRondas = partida.rondas
+        val totalRondas = rawRondas.coerceIn(1, allQuestions.size)
 
         gameQuestions = allQuestions.shuffled().take(totalRondas)
         labelNumTotalRondas.text = totalRondas.toString()
