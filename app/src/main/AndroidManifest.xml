@@ -30,7 +30,6 @@
 
         <activity android:name=".GameOverActivity" />
 
-        <activity android:name=".PythonActivity" />
 
 
     </application>
