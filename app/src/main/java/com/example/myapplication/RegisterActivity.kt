@@ -102,14 +102,13 @@ class RegisterActivity : AppCompatActivity() {
                 )
                 nuevoJugador.partidas.add(nuevaPartida)
 
-                when (nuevaPartida.dificultad)
-                {
+                when (nuevaPartida.dificultad) {
                     1, 2 -> {
-                    val intent = Intent(this, GameActivity_2::class.java)
-                    intent.putExtra("JUGADOR", nuevoJugador)
-                    onPause()
-                    startActivity(intent)
-                }
+                        val intent = Intent(this, GameActivity_2::class.java)
+                        intent.putExtra("JUGADOR", nuevoJugador)
+                        onPause()
+                        startActivity(intent)
+                    }
                     3 -> {
                         val intent = Intent(this, GameActivity_ds::class.java)
                         intent.putExtra("JUGADOR", nuevoJugador)
@@ -117,7 +116,6 @@ class RegisterActivity : AppCompatActivity() {
                         startActivity(intent)
                     }
                 }
-
             }
         }
     }
