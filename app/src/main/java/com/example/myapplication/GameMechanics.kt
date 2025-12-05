@@ -190,9 +190,10 @@ class GameMechanics(private val context: Context) {
     /** Normaliza números escritos como texto para la categoría NUMBER */
     fun isAnswerCorrect(selected: String, correct: String): Boolean {
         val map = mapOf(
-            "1" to "ONE", "2" to "TWO", "3" to "THREE", "4" to "FOUR", "5" to "FIVE",
-            "6" to "SIX", "7" to "SEVEN", "8" to "EIGHT", "9" to "NINE",
-            "10" to "TEN", "12" to "TWELVE", "0" to "ZERO"
+            "0" to "ZERO", "1" to "ONE", "2" to "TWO", "3" to "THREE", "4" to "FOUR",
+            "5" to "FIVE", "6" to "SIX", "7" to "SEVEN", "8" to "EIGHT", "9" to "NINE",
+            "10" to "TEN", "12" to "TWELVE", "16" to "SIXTEEN", "25" to "TWENTY-FIVE",
+            "30" to "THIRTY", "32" to "THIRTY-TWO", "56" to "FIFTY-SIX"
                        )
         val normalizedSelected = map[selected.uppercase()] ?: selected.uppercase()
         return normalizedSelected == correct.uppercase()
@@ -201,9 +202,23 @@ class GameMechanics(private val context: Context) {
     /** Map número escrito a número visual */
     private fun mapNumber(option: String): String {
         return when (option.uppercase()) {
-            "ONE" -> "1"; "TWO" -> "2"; "THREE" -> "3"; "FOUR" -> "4"
-            "FIVE" -> "5"; "SIX" -> "6"; "SEVEN" -> "7"; "EIGHT" -> "8"
-            "NINE" -> "9"; "TEN" -> "10"; "TWELVE" -> "12"; "ZERO" -> "0"
+            "ZERO" -> "0"
+            "ONE" -> "1"
+            "TWO" -> "2"
+            "THREE" -> "3"
+            "FOUR" -> "4"
+            "FIVE" -> "5"
+            "SIX" -> "6"
+            "SEVEN" -> "7"
+            "EIGHT" -> "8"
+            "NINE" -> "9"
+            "TEN" -> "10"
+            "TWELVE" -> "12"
+            "SIXTEEN" -> "16"
+            "TWENTY-FIVE" -> "25"
+            "THIRTY" -> "30"
+            "THIRTY-TWO" -> "32"
+            "FIFTY-SIX" -> "56"
             else -> option
         }
     }
@@ -220,6 +235,16 @@ class GameMechanics(private val context: Context) {
             "HEXAGON" -> R.drawable.shape_hexagon
             "OCTAGON" -> R.drawable.shape_octagon
             "DIAMOND" -> R.drawable.shape_diamond
+            "PENTAGON" -> R.drawable.shape_pentagon
+            "HEPTAGON" -> R.drawable.shape_heptagon
+            "NONAGON" -> R.drawable.shape_nonagon
+            "CUBE" -> R.drawable.shape_cube
+            "CYLINDER" -> R.drawable.shape_cylinder
+            "CONE" -> R.drawable.shape_cone
+            "SPHERE" -> R.drawable.shape_sphere
+            "PYRAMID" -> R.drawable.shape_pyramid
+            "REGULAR_POLYGON" -> R.drawable.shape_regular_polygon
+            "IRREGULAR_POLYGON" -> R.drawable.shape_irregular_polygon
             else -> R.drawable.shape_default
         }
     }

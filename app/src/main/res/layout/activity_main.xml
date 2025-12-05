@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:layout_row="0"
         android:layout_column="1"
-        android:paddingTop="200dp"
+        android:paddingTop="20dp"
         android:rowCount="3"
         android:columnCount="1"
         android:layout_gravity="center">
@@ -38,7 +38,7 @@
             android:layout_gravity="center"
             android:background="@null"
             android:contentDescription="@string/jugar"
-            android:scaleType="fitCenter"
+            android:scaleType="fitStart"
             android:src="@drawable/playbttn"/>
 
         <ImageButton
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="0"
-            android:paddingTop="50dp"
+            android:paddingTop="20dp"
             android:layout_gravity="center"
             android:src="@drawable/salirbttn"
             android:contentDescription="@string/salir"
