@@ -4,6 +4,7 @@ import UserGameData
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
@@ -26,6 +27,7 @@ class GameActivity_2 : AppCompatActivity() {
 
     private lateinit var gameMechanics: GameMechanics
     private lateinit var gameQuestions: List<PreguntaJuego>
+    private lateinit var allQuestions: List<PreguntaJuego>
     private var currentQuestionIndex = 0
     private var score = 0
     private var isAnswered = false
@@ -70,19 +72,64 @@ class GameActivity_2 : AppCompatActivity() {
 
 
 
+
         gameMechanics = GameMechanics(this)
 
-        val allQuestions = PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
 
         @Suppress("DEPRECATION", "UNCHECKED_CAST")
         jugador = (intent.getSerializableExtra("JUGADOR") as? Jugador)!!
 
+
+
         partidaActual = jugador.partidas.lastOrNull()!!
 
+
+
         partida = partidaActual
+
+        // Justo antes de asignar allQuestions
+        Log.d("GameActivity_2", "Dificultad partida recibida: ${partida.dificultad}")
+
+        allQuestions = try {
+            when (partida.dificultad) {
+                1 -> {
+                    val questions = PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
+                    Log.d("GameActivity_2", "Preguntas nivel1 cargadas: ${questions.size}")
+                    questions
+                }
+                2 -> {
+                    val questions = PreguntaJuego.loadQuestionsFromJson(this, "nivel2.json")
+                    Log.d("GameActivity_2", "Preguntas nivel2 cargadas: ${questions.size}")
+                    questions
+                }
+                else -> {
+                    Log.e("GameActivity_2", "Dificultad inválida: ${partida.dificultad}")
+                    emptyList()
+                }
+            }
+        } catch (e: Exception) {
+            Log.e("GameActivity_2", "Error cargando preguntas: ${e.message}")
+            emptyList()
+        }
+
+// Validar que no esté vacía antes de continuar
+        if (allQuestions.isEmpty()) {
+            Log.e("GameActivity_2", "No se pudieron cargar preguntas. Se finalizará la actividad.")
+            finish() // Evita que la app se caiga
+            return
+        }
+
+
+        allQuestions = when (this.partida.dificultad) {
+            1 -> PreguntaJuego.loadQuestionsFromJson(this, "nivel1.json")
+            2 -> PreguntaJuego.loadQuestionsFromJson(this, "nivel2.json")
+            else -> {
+                Log.e("GameActivity_2", "Dificultad inválida: ${partida.dificultad}")
+                emptyList()
+            }
+        }
         val rawRondas = partida.rondas
         val totalRondas = rawRondas.coerceIn(1, allQuestions.size)
-
 
         gameQuestions = allQuestions.shuffled().take(totalRondas)
         labelNumTotalRondas.text = totalRondas.toString()
@@ -103,6 +150,7 @@ class GameActivity_2 : AppCompatActivity() {
 
     private fun loadQuestion() {
         if (currentQuestionIndex >= gameQuestions.size) {
+            onPause()
             endGame()
             return
         }
@@ -173,8 +221,10 @@ class GameActivity_2 : AppCompatActivity() {
         btnNextRound.setOnClickListener { finish() }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        mediaPlayer.release()
+    override fun onPause() {
+        super.onPause()
+        if (this::mediaPlayer.isInitialized && mediaPlayer.isPlaying) {
+            mediaPlayer.pause()
+        }
     }
 }

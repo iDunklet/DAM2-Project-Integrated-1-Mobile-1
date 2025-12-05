@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import UserGameData
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -9,12 +10,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class GameOverActivity : AppCompatActivity() {
+    private lateinit var mediaPlayer: MediaPlayer
     private lateinit var jugador: Jugador
     private lateinit var partida: UserGameData
     private lateinit var btnRePlay: Button
     private lateinit var btnExit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        mediaPlayer = MediaPlayer.create(this, R.raw.funny_toy)
+        mediaPlayer.start()
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_game_over)
@@ -55,10 +60,20 @@ class GameOverActivity : AppCompatActivity() {
         FilesManager.saveFile(this, jugadores)
 
         btnRePlay.setOnClickListener {
+            onPause()
             startActivity(Intent(this, RegisterActivity::class.java))
+
         }
         btnExit.setOnClickListener {
+            onPause()
             finishAffinity()
+        }
+
+    }
+    override fun onPause() {
+        super.onPause()
+        if (this::mediaPlayer.isInitialized && mediaPlayer.isPlaying) {
+            mediaPlayer.pause()
         }
     }
 }
