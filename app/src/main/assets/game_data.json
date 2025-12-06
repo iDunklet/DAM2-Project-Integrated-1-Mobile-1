@@ -1,0 +1,167 @@
+[
+  {
+    "username": "player1",
+    "edad": 20,
+    "rondas": 5,
+    "dificultad": 1,
+    "aciertos": 4,
+    "errores": 1,
+    "fechaHoraInicio": "2025-11-20T10:15:00",
+    "fechaHoraFin": "2025-11-20T10:20:00",
+    "gameTime": 300
+  },
+  {
+    "username": "player1",
+    "edad": 20,
+    "rondas": 10,
+    "dificultad": 2,
+    "aciertos": 7,
+    "errores": 3,
+    "fechaHoraInicio": "2025-11-21T11:00:00",
+    "fechaHoraFin": "2025-11-21T11:15:00",
+    "gameTime": 900
+  },
+  {
+    "username": "player1",
+    "edad": 20,
+    "rondas": 15,
+    "dificultad": 3,
+    "aciertos": 10,
+    "errores": 5,
+    "fechaHoraInicio": "2025-11-22T12:30:00",
+    "fechaHoraFin": "2025-11-22T12:50:00",
+    "gameTime": 1200
+  },
+  {
+    "username": "player2",
+    "edad": 22,
+    "rondas": 5,
+    "dificultad": 2,
+    "aciertos": 4,
+    "errores": 1,
+    "fechaHoraInicio": "2025-11-20T09:10:00",
+    "fechaHoraFin": "2025-11-20T09:15:00",
+    "gameTime": 300
+  },
+  {
+    "username": "player2",
+    "edad": 22,
+    "rondas": 10,
+    "dificultad": 1,
+    "aciertos": 8,
+    "errores": 2,
+    "fechaHoraInicio": "2025-11-21T10:00:00",
+    "fechaHoraFin": "2025-11-21T10:15:00",
+    "gameTime": 900
+  },
+  {
+    "username": "player2",
+    "edad": 22,
+    "rondas": 15,
+    "dificultad": 3,
+    "aciertos": 12,
+    "errores": 3,
+    "fechaHoraInicio": "2025-11-22T14:30:00",
+    "fechaHoraFin": "2025-11-22T14:50:00",
+    "gameTime": 1200
+  },
+  {
+    "username": "player3",
+    "edad": 18,
+    "rondas": 5,
+    "dificultad": 1,
+    "aciertos": 3,
+    "errores": 2,
+    "fechaHoraInicio": "2025-11-20T08:20:00",
+    "fechaHoraFin": "2025-11-20T08:25:00",
+    "gameTime": 300
+  },
+  {
+    "username": "player3",
+    "edad": 18,
+    "rondas": 10,
+    "dificultad": 2,
+    "aciertos": 7,
+    "errores": 2,
+    "fechaHoraInicio": "2025-11-21T09:30:00",
+    "fechaHoraFin": "2025-11-21T09:45:00",
+    "gameTime": 900
+  },
+  {
+    "username": "player3",
+    "edad": 18,
+    "rondas": 15,
+    "dificultad": 3,
+    "aciertos": 11,
+    "errores": 4,
+    "fechaHoraInicio": "2025-11-22T11:00:00",
+    "fechaHoraFin": "2025-11-22T11:20:00",
+    "gameTime": 1200
+  },
+  {
+    "username": "player4",
+    "edad": 25,
+    "rondas": 5,
+    "dificultad": 2,
+    "aciertos": 4,
+    "errores": 1,
+    "fechaHoraInicio": "2025-11-20T07:50:00",
+    "fechaHoraFin": "2025-11-20T07:55:00",
+    "gameTime": 300
+  },
+  {
+    "username": "player4",
+    "edad": 25,
+    "rondas": 10,
+    "dificultad": 3,
+    "aciertos": 8,
+    "errores": 3,
+    "fechaHoraInicio": "2025-11-21T08:40:00",
+    "fechaHoraFin": "2025-11-21T08:55:00",
+    "gameTime": 900
+  },
+  {
+    "username": "player4",
+    "edad": 25,
+    "rondas": 15,
+    "dificultad": 1,
+    "aciertos": 12,
+    "errores": 5,
+    "fechaHoraInicio": "2025-11-22T10:10:00",
+    "fechaHoraFin": "2025-11-22T10:30:00",
+    "gameTime": 1200
+  },
+  {
+    "username": "player5",
+    "edad": 19,
+    "rondas": 5,
+    "dificultad": 3,
+    "aciertos": 3,
+    "errores": 2,
+    "fechaHoraInicio": "2025-11-20T06:45:00",
+    "fechaHoraFin": "2025-11-20T06:50:00",
+    "gameTime": 300
+  },
+  {
+    "username": "player5",
+    "edad": 19,
+    "rondas": 10,
+    "dificultad": 2,
+    "aciertos": 7,
+    "errores": 3,
+    "fechaHoraInicio": "2025-11-21T07:30:00",
+    "fechaHoraFin": "2025-11-21T07:45:00",
+    "gameTime": 900
+  },
+  {
+    "username": "player5",
+    "edad": 19,
+    "rondas": 15,
+    "dificultad": 1,
+    "aciertos": 11,
+    "errores": 4,
+    "fechaHoraInicio": "2025-11-22T09:00:00",
+    "fechaHoraFin": "2025-11-22T09:20:00",
+    "gameTime": 1200
+  }
+]

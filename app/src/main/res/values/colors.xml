@@ -38,11 +38,19 @@
     <color name="orange">#FB8C00</color>
     <color name="brown">#6D4C41</color>
     <color name="gray">#9E9E9E</color>
+    <color name="pink">#FFC0CB</color>
 
+    <color name="cyan">#00FFFF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <!-- Tonos especiales -->
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#A9A9A9</color>
 
     <!-- extra -->
     <color name="faded_gold">#C79F3F</color>
     <color name="state_error">#FFF44336</color>
+
 
 
 

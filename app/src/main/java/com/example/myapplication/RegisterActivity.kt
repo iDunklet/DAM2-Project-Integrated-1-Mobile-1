@@ -102,14 +102,13 @@ class RegisterActivity : AppCompatActivity() {
                 )
                 nuevoJugador.partidas.add(nuevaPartida)
 
-                when (nuevaPartida.dificultad)
-                {
+                when (nuevaPartida.dificultad) {
                     1, 2 -> {
-                    val intent = Intent(this, GameActivity_2::class.java)
-                    intent.putExtra("JUGADOR", nuevoJugador)
-                    onPause()
-                    startActivity(intent)
-                }
+                        val intent = Intent(this, GameActivity_2::class.java)
+                        intent.putExtra("JUGADOR", nuevoJugador)
+                        onPause()
+                        startActivity(intent)
+                    }
                     3 -> {
                         val intent = Intent(this, GameActivity_ds::class.java)
                         intent.putExtra("JUGADOR", nuevoJugador)
@@ -117,7 +116,6 @@ class RegisterActivity : AppCompatActivity() {
                         startActivity(intent)
                     }
                 }
-
             }
         }
     }
@@ -142,7 +140,6 @@ class RegisterActivity : AppCompatActivity() {
                                           )
     }
 
-
     private fun updateDataVariables(target: Int, value: Int) {
         if (target == TARGET_ROUNDS) {
             numeroRondas = value
@@ -152,7 +149,6 @@ class RegisterActivity : AppCompatActivity() {
             Log.d("RegisterActivity", "Dificultad seleccionada: $nivelDificultad")
         }
     }
-
 
     private fun validateInputs(nameEt: EditText, ageEt: EditText): Boolean {
         if (nameEt.text.isNullOrBlank()) {

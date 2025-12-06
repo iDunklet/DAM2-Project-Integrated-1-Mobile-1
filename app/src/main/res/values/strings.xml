@@ -19,4 +19,8 @@
     <string name="edad">EDAD:</string>
     <string name="nombre">NOMBRE:</string>
     <string name="inicio">INICIO</string>
+    <string name="jugar_boton" />
+    <string name="jugar" />
+    <string name="salir" />
+    <string name="estats" />
 </resources>

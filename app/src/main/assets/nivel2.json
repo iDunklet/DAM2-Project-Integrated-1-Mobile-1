@@ -1,142 +1,207 @@
 [
   {
-    "id": 1,
+    "id": 101,
     "categoria": "COLOR",
-    "enunciado_es": "Selecciona el color primario del cielo despejado.",
-    "respuesta_correcta_en": "BLUE",
-    "opciones_en": ["RED", "GREEN", "PURPLE", "YELLOW", "BLUE"]
+    "enunciadoEs": "¿Qué color se obtiene al mezclar rojo y blanco?",
+    "respuestaCorrectaEn": "PINK",
+    "opcionesEn": ["PINK", "ORANGE", "BROWN", "PURPLE", "GREY"]
   },
   {
-    "id": 2,
+    "id": 102,
     "categoria": "COLOR",
-    "enunciado_es": "¿Qué color resulta de mezclar amarillo y azul?",
-    "respuesta_correcta_en": "GREEN",
-    "opciones_en": ["ORANGE", "PINK", "GREEN", "BROWN", "BLACK"]
+    "enunciadoEs": "Selecciona el color que es más oscuro.",
+    "respuestaCorrectaEn": "BLACK",
+    "opcionesEn": ["YELLOW", "BLUE", "BLACK", "WHITE", "GREEN"]
   },
   {
-    "id": 3,
+    "id": 103,
     "categoria": "COLOR",
-    "enunciado_es": "Encuentra el color de una fresa madura.",
-    "respuesta_correcta_en": "RED",
-    "opciones_en": ["WHITE", "RED", "GREY", "BROWN", "ORANGE"]
+    "enunciadoEs": "¿Qué color tiene una sandía por dentro?",
+    "respuestaCorrectaEn": "RED",
+    "opcionesEn": ["GREEN", "RED", "BLUE", "YELLOW", "WHITE"]
   },
   {
-    "id": 10,
+    "id": 104,
     "categoria": "COLOR",
-    "enunciado_es": "Elige el color de la nieve fresca.",
-    "respuesta_correcta_en": "WHITE",
-    "opciones_en": ["BLACK", "RED", "GREY", "WHITE", "PURPLE"]
+    "enunciadoEs": "Selecciona el color de un árbol en primavera.",
+    "respuestaCorrectaEn": "GREEN",
+    "opcionesEn": ["RED", "PURPLE", "GREEN", "ORANGE", "BLACK"]
   },
   {
-    "id": 11,
+    "id": 105,
     "categoria": "COLOR",
-    "enunciado_es": "Selecciona el color de un plátano maduro.",
-    "respuesta_correcta_en": "YELLOW",
-    "opciones_en": ["BLUE", "GREEN", "BROWN", "YELLOW", "RED"]
+    "enunciadoEs": "¿De qué color es una berenjena?",
+    "respuestaCorrectaEn": "PURPLE",
+    "opcionesEn": ["BLUE", "PURPLE", "BLACK", "GREEN", "YELLOW"]
   },
   {
-    "id": 4,
+    "id": 106,
+    "categoria": "COLOR",
+    "enunciadoEs": "Selecciona el color de un flamenco.",
+    "respuestaCorrectaEn": "PINK",
+    "opcionesEn": ["RED", "WHITE", "PINK", "YELLOW", "GREY"]
+  },
+  {
+    "id": 107,
+    "categoria": "COLOR",
+    "enunciadoEs": "¿Qué color se obtiene al mezclar azul y rojo?",
+    "respuestaCorrectaEn": "PURPLE",
+    "opcionesEn": ["ORANGE", "GREEN", "PURPLE", "PINK", "WHITE"]
+  },
+  {
+    "id": 108,
+    "categoria": "COLOR",
+    "enunciadoEs": "Elige el color de un oso panda.",
+    "respuestaCorrectaEn": "BLACK",
+    "opcionesEn": ["BLACK", "ORANGE", "YELLOW", "BLUE", "PINK"]
+  },
+
+  {
+    "id": 109,
     "categoria": "NUMBER",
-    "enunciado_es": "Selecciona el número que corresponde a ocho.",
-    "respuesta_correcta_en": "EIGHT",
-    "opciones_en": ["TEN", "THREE", "NINE", "EIGHT", "FIVE"]
+    "enunciadoEs": "Selecciona el número que viene justo después del siete.",
+    "respuestaCorrectaEn": "EIGHT",
+    "opcionesEn": ["NINE", "TEN", "EIGHT", "SIX", "SEVEN"]
   },
   {
-    "id": 5,
+    "id": 110,
     "categoria": "NUMBER",
-    "enunciado_es": "¿Cuál es el doble de cinco?",
-    "respuesta_correcta_en": "TEN",
-    "opciones_en": ["FOUR", "EIGHT", "TEN", "ONE", "TWELVE"]
+    "enunciadoEs": "Si tienes tres manzanas y te dan una más, ¿cuántas tienes?",
+    "respuestaCorrectaEn": "FOUR",
+    "opcionesEn": ["FOUR", "TWO", "FIVE", "ONE", "THREE"]
   },
   {
-    "id": 6,
+    "id": 111,
     "categoria": "NUMBER",
-    "enunciado_es": "Elige el número entre uno y tres.",
-    "respuesta_correcta_en": "TWO",
-    "opciones_en": ["FOUR", "SIX", "TWO", "SEVEN", "FIVE"]
+    "enunciadoEs": "Selecciona el número mayor.",
+    "respuestaCorrectaEn": "NINE",
+    "opcionesEn": ["TWO", "SEVEN", "NINE", "FIVE", "FOUR"]
   },
   {
-    "id": 12,
+    "id": 112,
     "categoria": "NUMBER",
-    "enunciado_es": "Selecciona el número de dedos en una mano.",
-    "respuesta_correcta_en": "FIVE",
-    "opciones_en": ["SIX", "FOUR", "THREE", "FIVE", "TEN"]
+    "enunciadoEs": "¿Cuántos lados tiene un triángulo?",
+    "respuestaCorrectaEn": "THREE",
+    "opcionesEn": ["FOUR", "THREE", "FIVE", "TWO", "SIX"]
   },
   {
-    "id": 13,
+    "id": 113,
     "categoria": "NUMBER",
-    "enunciado_es": "Encuentra el número que le sigue al seis.",
-    "respuesta_correcta_en": "SEVEN",
-    "opciones_en": ["EIGHT", "SEVEN", "FIVE", "NINE", "TEN"]
+    "enunciadoEs": "Selecciona el número que es menor.",
+    "respuestaCorrectaEn": "ONE",
+    "opcionesEn": ["THREE", "ONE", "FIVE", "SEVEN", "TEN"]
   },
   {
-    "id": 14,
+    "id": 114,
     "categoria": "NUMBER",
-    "enunciado_es": "Elige el número par más pequeño.",
-    "respuesta_correcta_en": "TWO",
-    "opciones_en": ["ZERO", "ONE", "TWO", "THREE", "FOUR"]
+    "enunciadoEs": "Si tienes cinco caramelos y comes uno, ¿cuántos quedan?",
+    "respuestaCorrectaEn": "FOUR",
+    "opcionesEn": ["FOUR", "TWO", "ONE", "THREE", "FIVE"]
   },
   {
-    "id": 15,
+    "id": 115,
     "categoria": "NUMBER",
-    "enunciado_es": "¿Cuántas docenas hay en doce?",
-    "respuesta_correcta_en": "ONE",
-    "opciones_en": ["ONE", "TWO", "TWELVE", "TEN", "ZERO"]
+    "enunciadoEs": "¿Cuántos lados tiene un cuadrado?",
+    "respuestaCorrectaEn": "FOUR",
+    "opcionesEn": ["THREE", "FOUR", "FIVE", "SIX", "TWO"]
   },
   {
-    "id": 7,
-    "categoria": "SHAPE",
-    "enunciado_es": "Selecciona la forma de una rueda de coche.",
-    "respuesta_correcta_en": "CIRCLE",
-    "opciones_en": ["SQUARE", "TRIANGLE", "OVAL", "RHOMBUS", "CIRCLE"]
+    "id": 116,
+    "categoria": "NUMBER",
+    "enunciadoEs": "Selecciona el número que representa la cantidad de patas de una mesa.",
+    "respuestaCorrectaEn": "FOUR",
+    "opcionesEn": ["TWO", "THREE", "FOUR", "FIVE", "SIX"]
   },
   {
-    "id": 8,
-    "categoria": "SHAPE",
-    "enunciado_es": "¿Qué forma tiene la mayoría de los ladrillos?",
-    "respuesta_correcta_en": "RECTANGLE",
-    "opciones_en": ["STAR", "RECTANGLE", "CUBE", "TRAPEZOID", "PENTAGON"]
+    "id": 117,
+    "categoria": "NUMBER",
+    "enunciadoEs": "¿Cuántos dedos tienes en un pie?",
+    "respuestaCorrectaEn": "FIVE",
+    "opcionesEn": ["THREE", "FOUR", "FIVE", "SIX", "TWO"]
   },
   {
-    "id": 9,
+    "id": 118,
+    "categoria": "NUMBER",
+    "enunciadoEs": "Selecciona el número que viene antes del diez.",
+    "respuestaCorrectaEn": "NINE",
+    "opcionesEn": ["EIGHT", "NINE", "SEVEN", "SIX", "TEN"]
+  },
+
+  {
+    "id": 119,
     "categoria": "SHAPE",
-    "enunciado_es": "Elige la figura con cuatro lados iguales y cuatro ángulos rectos.",
-    "respuesta_correcta_en": "SQUARE",
-    "opciones_en": ["SQUARE", "TRIANGLE", "HEXAGON", "DIAMOND", "OVAL"]
+    "enunciadoEs": "Selecciona la figura que tiene cuatro lados pero no todos iguales.",
+    "respuestaCorrectaEn": "RECTANGLE",
+    "opcionesEn": ["CIRCLE", "SQUARE", "RECTANGLE", "OVAL", "TRIANGLE"]
   },
   {
-    "id": 16,
+    "id": 120,
     "categoria": "SHAPE",
-    "enunciado_es": "Selecciona la figura geométrica con tres lados.",
-    "respuesta_correcta_en": "TRIANGLE",
-    "opciones_en": ["PENTAGON", "SQUARE", "HEXAGON", "TRIANGLE", "STAR"]
+    "enunciadoEs": "¿Qué figura tiene forma de diamante?",
+    "respuestaCorrectaEn": "DIAMOND",
+    "opcionesEn": ["STAR", "DIAMOND", "CIRCLE", "OVAL", "PENTAGON"]
   },
   {
-    "id": 17,
+    "id": 121,
     "categoria": "SHAPE",
-    "enunciado_es": "¿Qué forma tiene un huevo?",
-    "respuesta_correcta_en": "OVAL",
-    "opciones_en": ["RECTANGLE", "CIRCLE", "OVAL", "DIAMOND", "HEART"]
+    "enunciadoEs": "Selecciona la figura con cinco puntas.",
+    "respuestaCorrectaEn": "STAR",
+    "opcionesEn": ["STAR", "CIRCLE", "TRIANGLE", "HEXAGON", "SQUARE"]
   },
   {
-    "id": 18,
+    "id": 122,
     "categoria": "SHAPE",
-    "enunciado_es": "Figura con seis lados iguales.",
-    "respuesta_correcta_en": "HEXAGON",
-    "opciones_en": ["PENTAGON", "OCTAGON", "TRIANGLE", "HEXAGON", "SQUARE"]
+    "enunciadoEs": "¿Qué figura tiene forma de corazón?",
+    "respuestaCorrectaEn": "HEART",
+    "opcionesEn": ["CIRCLE", "HEART", "SQUARE", "STAR", "OVAL"]
   },
   {
-    "id": 19,
+    "id": 123,
     "categoria": "SHAPE",
-    "enunciado_es": "Forma común para señales de alto (stop).",
-    "respuesta_correcta_en": "OCTAGON",
-    "opciones_en": ["SQUARE", "DIAMOND", "HEXAGON", "OCTAGON", "CIRCLE"]
+    "enunciadoEs": "Selecciona la figura que parece un tubo o una lata.",
+    "respuestaCorrectaEn": "CYLINDER",
+    "opcionesEn": ["CUBE", "CIRCLE", "CYLINDER", "TRIANGLE", "RECTANGLE"]
   },
   {
-    "id": 20,
+    "id": 124,
     "categoria": "SHAPE",
-    "enunciado_es": "Una forma con puntas usada para representar el sol.",
-    "respuesta_correcta_en": "STAR",
-    "opciones_en": ["OVAL", "STAR", "CIRCLE", "TRIANGLE", "RECTANGLE"]
+    "enunciadoEs": "¿Qué figura se parece a una pelota de playa?",
+    "respuestaCorrectaEn": "SPHERE",
+    "opcionesEn": ["CUBE", "SPHERE", "CIRCLE", "OVAL", "CONE"]
+  },
+  {
+    "id": 125,
+    "categoria": "SHAPE",
+    "enunciadoEs": "Selecciona la figura que tiene forma de punta o cono.",
+    "respuestaCorrectaEn": "CONE",
+    "opcionesEn": ["CIRCLE", "CONE", "SQUARE", "STAR", "RECTANGLE"]
+  },
+  {
+    "id": 126,
+    "categoria": "SHAPE",
+    "enunciadoEs": "¿Qué figura se parece a un dado?",
+    "respuestaCorrectaEn": "CUBE",
+    "opcionesEn": ["CUBE", "CIRCLE", "TRIANGLE", "SPHERE", "CONE"]
+  },
+  {
+    "id": 127,
+    "categoria": "SHAPE",
+    "enunciadoEs": "Selecciona la figura que tiene forma de un anillo.",
+    "respuestaCorrectaEn": "CIRCLE",
+    "opcionesEn": ["CONE", "STAR", "CIRCLE", "OVAL", "CUBE"]
+  },
+  {
+    "id": 128,
+    "categoria": "SHAPE",
+    "enunciadoEs": "¿Qué figura se parece a una ventana típica?",
+    "respuestaCorrectaEn": "SQUARE",
+    "opcionesEn": ["OVAL", "RECTANGLE", "SQUARE", "STAR", "CIRCLE"]
+  },
+  {
+    "id": 129,
+    "categoria": "SHAPE",
+    "enunciadoEs": "Selecciona la figura que tiene seis lados.",
+    "respuestaCorrectaEn": "HEXAGON",
+    "opcionesEn": ["HEXAGON", "CIRCLE", "TRIANGLE", "SQUARE", "OVAL"]
   }
 ]

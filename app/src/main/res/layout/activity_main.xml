@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/homeScreenGrid"
     android:layout_width="match_parent"
@@ -8,7 +7,7 @@
     android:padding="30dp"
     android:rowCount="1"
     android:columnCount="2"
-    android:background="@color/fondoPantalla"
+    android:background="@drawable/bluebackground"
     tools:context=".MainActivity">
 
     <ImageView
@@ -25,34 +24,48 @@
         android:layout_height="match_parent"
         android:layout_row="0"
         android:layout_column="1"
-        android:paddingTop="300dp"
-        android:rowCount="2"
+        android:paddingTop="200dp"
+        android:rowCount="3"
         android:columnCount="1"
         android:layout_gravity="center">
 
-        <Button
+        <ImageButton
             android:id="@+id/btnStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_gravity="center"
-            android:background="@drawable/boton_verde"
-            android:text="@string/play"
-            android:textSize="66sp"
-            app:backgroundTint="@null"/>
+            android:background="@null"
+            android:contentDescription="@string/jugar"
+            android:scaleType="fitCenter"
+            android:src="@drawable/playbttn"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="0"
+            android:paddingTop="50dp"
             android:layout_gravity="center"
-            android:background="@drawable/boton_rojo"
-            android:text="@string/exit"
-            android:textSize="50sp"
-            app:backgroundTint="@null"/>
+            android:src="@drawable/salirbttn"
+            android:contentDescription="@string/salir"
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/btnstats"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:src="@drawable/statsbttn"
+            android:contentDescription="@string/estats"
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
     </GridLayout>
 
 </GridLayout>

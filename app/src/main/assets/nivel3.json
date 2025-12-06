@@ -1,142 +1,214 @@
 [
   {
-    "id": 1,
+    "id": 201,
     "categoria": "COLOR",
-    "enunciado_es": "Selecciona el color primario del cielo despejado.",
-    "respuesta_correcta_en": "BLUE",
-    "opciones_en": ["RED", "GREEN", "PURPLE", "YELLOW", "BLUE"]
+    "enunciadoEs": "¿Qué color percibe el ojo humano cuando recibe simultáneamente longitudes de onda correspondientes al rojo y al verde en igual intensidad?",
+    "respuestaCorrectaEn": "YELLOW",
+    "opcionesEn": ["YELLOW", "MAGENTA", "CYAN", "WHITE", "ORANGE"]
   },
   {
-    "id": 2,
+    "id": 202,
     "categoria": "COLOR",
-    "enunciado_es": "¿Qué color resulta de mezclar amarillo y azul?",
-    "respuesta_correcta_en": "GREEN",
-    "opciones_en": ["ORANGE", "PINK", "GREEN", "BROWN", "BLACK"]
+    "enunciadoEs": "En el modelo CMYK, ¿qué color resulta de combinar completamente cian y amarillo?",
+    "respuestaCorrectaEn": "GREEN",
+    "opcionesEn": ["RED", "GREEN", "BLUE", "MAGENTA", "BLACK"]
   },
   {
-    "id": 3,
+    "id": 203,
     "categoria": "COLOR",
-    "enunciado_es": "Encuentra el color de una fresa madura.",
-    "respuesta_correcta_en": "RED",
-    "opciones_en": ["WHITE", "RED", "GREY", "BROWN", "ORANGE"]
+    "enunciadoEs": "¿Qué color complementa al azul en el círculo cromático tradicional?",
+    "respuestaCorrectaEn": "ORANGE",
+    "opcionesEn": ["RED", "GREEN", "YELLOW", "ORANGE", "PURPLE"]
   },
   {
-    "id": 10,
+    "id": 204,
     "categoria": "COLOR",
-    "enunciado_es": "Elige el color de la nieve fresca.",
-    "respuesta_correcta_en": "WHITE",
-    "opciones_en": ["BLACK", "RED", "GREY", "WHITE", "PURPLE"]
+    "enunciadoEs": "Selecciona el color que NO es primario en el sistema aditivo RGB.",
+    "respuestaCorrectaEn": "YELLOW",
+    "opcionesEn": ["RED", "GREEN", "BLUE", "YELLOW", "NONE"]
   },
   {
-    "id": 11,
+    "id": 205,
     "categoria": "COLOR",
-    "enunciado_es": "Selecciona el color de un plátano maduro.",
-    "respuesta_correcta_en": "YELLOW",
-    "opciones_en": ["BLUE", "GREEN", "BROWN", "YELLOW", "RED"]
+    "enunciadoEs": "En el espacio HSL, ¿qué componente cambia al ajustar la intensidad de un color sin alterar su tono?",
+    "respuestaCorrectaEn": "SATURATION",
+    "opcionesEn": ["HUE", "SATURATION", "LIGHTNESS", "VALUE", "TEMPERATURE"]
   },
   {
-    "id": 4,
+    "id": 206,
+    "categoria": "COLOR",
+    "enunciadoEs": "¿Qué color resulta de restar azul al blanco en el modelo sustractivo?",
+    "respuestaCorrectaEn": "YELLOW",
+    "opcionesEn": ["CYAN", "MAGENTA", "YELLOW", "RED", "BLACK"]
+  },
+  {
+    "id": 207,
+    "categoria": "COLOR",
+    "enunciadoEs": "Selecciona el color con mayor longitud de onda dentro del espectro visible.",
+    "respuestaCorrectaEn": "RED",
+    "opcionesEn": ["VIOLET", "BLUE", "GREEN", "YELLOW", "RED"]
+  },
+  {
+    "id": 208,
+    "categoria": "COLOR",
+    "enunciadoEs": "En teoría del color, ¿qué tipo de armonía se obtiene usando colores igualmente espaciados en el círculo cromático?",
+    "respuestaCorrectaEn": "TRIADIC",
+    "opcionesEn": ["ANALOGOUS", "COMPLEMENTARY", "TRIADIC", "TETRADIC", "MONOCHROMATIC"]
+  },
+
+  {
+    "id": 209,
     "categoria": "NUMBER",
-    "enunciado_es": "Selecciona el número que corresponde a ocho.",
-    "respuesta_correcta_en": "EIGHT",
-    "opciones_en": ["TEN", "THREE", "NINE", "EIGHT", "FIVE"]
+    "enunciadoEs": "¿Cuál es el único número par que también es primo?",
+    "respuestaCorrectaEn": "TWO",
+    "opcionesEn": ["TWO", "FOUR", "SIX", "EIGHT", "TEN"]
   },
   {
-    "id": 5,
+    "id": 210,
     "categoria": "NUMBER",
-    "enunciado_es": "¿Cuál es el doble de cinco?",
-    "respuesta_correcta_en": "TEN",
-    "opciones_en": ["FOUR", "EIGHT", "TEN", "ONE", "TWELVE"]
+    "enunciadoEs": "Selecciona el número que es solución de la ecuación: 3x - 7 = 11.",
+    "respuestaCorrectaEn": "SIX",
+    "opcionesEn": ["FIVE", "SIX", "FOUR", "SEVEN", "EIGHT"]
   },
   {
-    "id": 6,
+    "id": 211,
     "categoria": "NUMBER",
-    "enunciado_es": "Elige el número entre uno y tres.",
-    "respuesta_correcta_en": "TWO",
-    "opciones_en": ["FOUR", "SIX", "TWO", "SEVEN", "FIVE"]
+    "enunciadoEs": "Si un número n es divisible por 4 y por 6, ¿cuál es el menor número positivo que cumple esa condición?",
+    "respuestaCorrectaEn": "TWELVE",
+    "opcionesEn": ["FOUR", "SIX", "TWELVE", "TWENTY", "TWENTY-FOUR"]
   },
   {
-    "id": 12,
+    "id": 212,
     "categoria": "NUMBER",
-    "enunciado_es": "Selecciona el número de dedos en una mano.",
-    "respuesta_correcta_en": "FIVE",
-    "opciones_en": ["SIX", "FOUR", "THREE", "FIVE", "TEN"]
+    "enunciadoEs": "Selecciona el número que es un cuadrado perfecto.",
+    "respuestaCorrectaEn": "SIXTEEN",
+    "opcionesEn": ["TEN", "FOURTEEN", "SIXTEEN", "EIGHTEEN", "TWENTY"]
   },
   {
-    "id": 13,
+    "id": 213,
     "categoria": "NUMBER",
-    "enunciado_es": "Encuentra el número que le sigue al seis.",
-    "respuesta_correcta_en": "SEVEN",
-    "opciones_en": ["EIGHT", "SEVEN", "FIVE", "NINE", "TEN"]
+    "enunciadoEs": "¿Cuál es la suma de los primeros cinco números impares comenzando desde uno?",
+    "respuestaCorrectaEn": "TWENTY-FIVE",
+    "opcionesEn": ["TEN", "FIFTEEN", "TWENTY-ONE", "TWENTY-FIVE", "THIRTY"]
   },
   {
-    "id": 14,
+    "id": 214,
     "categoria": "NUMBER",
-    "enunciado_es": "Elige el número par más pequeño.",
-    "respuesta_correcta_en": "TWO",
-    "opciones_en": ["ZERO", "ONE", "TWO", "THREE", "FOUR"]
+    "enunciadoEs": "¿Qué número resulta de multiplicar el único primo par por el tercer número primo?",
+    "respuestaCorrectaEn": "TEN",
+    "opcionesEn": ["TEN", "TWELVE", "EIGHT", "SIX", "FOUR"]
   },
   {
-    "id": 15,
+    "id": 215,
     "categoria": "NUMBER",
-    "enunciado_es": "¿Cuántas docenas hay en doce?",
-    "respuesta_correcta_en": "ONE",
-    "opciones_en": ["ONE", "TWO", "TWELVE", "TEN", "ZERO"]
+    "enunciadoEs": "Selecciona el número que es divisible entre 3, 5 y 2 simultáneamente.",
+    "respuestaCorrectaEn": "THIRTY",
+    "opcionesEn": ["TWELVE", "THIRTY", "FORTY", "TWENTY", "FIFTEEN"]
   },
   {
-    "id": 7,
-    "categoria": "SHAPE",
-    "enunciado_es": "Selecciona la forma de una rueda de coche.",
-    "respuesta_correcta_en": "CIRCLE",
-    "opciones_en": ["SQUARE", "TRIANGLE", "OVAL", "RHOMBUS", "CIRCLE"]
+    "id": 216,
+    "categoria": "NUMBER",
+    "enunciadoEs": "¿Cuál es el valor de 2^5?",
+    "respuestaCorrectaEn": "THIRTY-TWO",
+    "opcionesEn": ["SIXTEEN", "THIRTY-TWO", "TWENTY", "FORTY", "EIGHT"]
   },
   {
-    "id": 8,
-    "categoria": "SHAPE",
-    "enunciado_es": "¿Qué forma tiene la mayoría de los ladrillos?",
-    "respuesta_correcta_en": "RECTANGLE",
-    "opciones_en": ["STAR", "RECTANGLE", "CUBE", "TRAPEZOID", "PENTAGON"]
+    "id": 217,
+    "categoria": "NUMBER",
+    "enunciadoEs": "Selecciona el número que NO es primo.",
+    "respuestaCorrectaEn": "NINE",
+    "opcionesEn": ["NINE", "TWO", "THREE", "SEVEN", "ELEVEN"]
   },
   {
-    "id": 9,
+    "id": 218,
+    "categoria": "NUMBER",
+    "enunciadoEs": "Si f(n)=n(n+1), selecciona el resultado para n=7.",
+    "respuestaCorrectaEn": "FIFTY-SIX",
+    "opcionesEn": ["FORTY-NINE", "FIFTY-SIX", "SIXTY-FOUR", "THIRTY-FIVE", "SEVENTY"]
+  },
+
+  {
+    "id": 219,
     "categoria": "SHAPE",
-    "enunciado_es": "Elige la figura con cuatro lados iguales y cuatro ángulos rectos.",
-    "respuesta_correcta_en": "SQUARE",
-    "opciones_en": ["SQUARE", "TRIANGLE", "HEXAGON", "DIAMOND", "OVAL"]
+    "enunciadoEs": "Selecciona la figura cuyos ángulos internos suman 540 grados.",
+    "respuestaCorrectaEn": "PENTAGON",
+    "opcionesEn": ["TRIANGLE", "SQUARE", "PENTAGON", "HEXAGON", "HEPTAGON"]
   },
   {
-    "id": 16,
+    "id": 220,
     "categoria": "SHAPE",
-    "enunciado_es": "Selecciona la figura geométrica con tres lados.",
-    "respuesta_correcta_en": "TRIANGLE",
-    "opciones_en": ["PENTAGON", "SQUARE", "HEXAGON", "TRIANGLE", "STAR"]
+    "enunciadoEs": "¿Qué sólido geométrico tiene exactamente una cara curva y una base circular?",
+    "respuestaCorrectaEn": "CONE",
+    "opcionesEn": ["CYLINDER", "CONE", "SPHERE", "CUBE", "PYRAMID"]
   },
   {
-    "id": 17,
+    "id": 221,
     "categoria": "SHAPE",
-    "enunciado_es": "¿Qué forma tiene un huevo?",
-    "respuesta_correcta_en": "OVAL",
-    "opciones_en": ["RECTANGLE", "CIRCLE", "OVAL", "DIAMOND", "HEART"]
+    "enunciadoEs": "Selecciona la figura que posee infinitas líneas de simetría.",
+    "respuestaCorrectaEn": "CIRCLE",
+    "opcionesEn": ["CIRCLE", "SQUARE", "RECTANGLE", "TRIANGLE", "STAR"]
   },
   {
-    "id": 18,
+    "id": 222,
     "categoria": "SHAPE",
-    "enunciado_es": "Figura con seis lados iguales.",
-    "respuesta_correcta_en": "HEXAGON",
-    "opciones_en": ["PENTAGON", "OCTAGON", "TRIANGLE", "HEXAGON", "SQUARE"]
+    "enunciadoEs": "¿Qué sólido tiene todas sus caras congruentes y cada una es un cuadrado?",
+    "respuestaCorrectaEn": "CUBE",
+    "opcionesEn": ["CONE", "CYLINDER", "CUBE", "PYRAMID", "SPHERE"]
   },
   {
-    "id": 19,
+    "id": 223,
     "categoria": "SHAPE",
-    "enunciado_es": "Forma común para señales de alto (stop).",
-    "respuesta_correcta_en": "OCTAGON",
-    "opciones_en": ["SQUARE", "DIAMOND", "HEXAGON", "OCTAGON", "CIRCLE"]
+    "enunciadoEs": "Selecciona la figura compuesta por dos círculos paralelos unidos por una superficie curva.",
+    "respuestaCorrectaEn": "CYLINDER",
+    "opcionesEn": ["SPHERE", "CONE", "CYLINDER", "CUBE", "PYRAMID"]
   },
   {
-    "id": 20,
+    "id": 224,
     "categoria": "SHAPE",
-    "enunciado_es": "Una forma con puntas usada para representar el sol.",
-    "respuesta_correcta_en": "STAR",
-    "opciones_en": ["OVAL", "STAR", "CIRCLE", "TRIANGLE", "RECTANGLE"]
+    "enunciadoEs": "¿Qué polígono tiene la menor relación perímetro/área para una cantidad fija de vértices?",
+    "respuestaCorrectaEn": "REGULAR_POLYGON",
+    "opcionesEn": ["IRREGULAR_POLYGON", "REGULAR_POLYGON", "STAR", "RECTANGLE", "TRIANGLE"]
+  },
+  {
+    "id": 225,
+    "categoria": "SHAPE",
+    "enunciadoEs": "¿Qué figura resulta de la intersección de un plano paralelo a la base de un cono?",
+    "respuestaCorrectaEn": "CIRCLE",
+    "opcionesEn": ["ELLIPSE", "CIRCLE", "PARABOLA", "HYPERBOLA", "TRIANGLE"]
+  },
+  {
+    "id": 226,
+    "categoria": "SHAPE",
+    "enunciadoEs": "Selecciona la figura que tiene exactamente 12 aristas.",
+    "respuestaCorrectaEn": "CUBE",
+    "opcionesEn": ["CUBE", "SPHERE", "CONE", "CYLINDER", "TETRAHEDRON"]
+  },
+  {
+    "id": 227,
+    "categoria": "SHAPE",
+    "enunciadoEs": "¿Qué sólido resulta de rotar un rectángulo alrededor de uno de sus lados más largos?",
+    "respuestaCorrectaEn": "CYLINDER",
+    "opcionesEn": ["SPHERE", "CYLINDER", "CONE", "CUBE", "PYRAMID"]
+  },
+  {
+    "id": 228,
+    "categoria": "SHAPE",
+    "enunciadoEs": "Selecciona la figura cuyo número de diagonales es igual a 2.",
+    "respuestaCorrectaEn": "PENTAGON",
+    "opcionesEn": ["SQUARE", "TRIANGLE", "PENTAGON", "HEXAGON", "HEPTAGON"]
+  },
+  {
+    "id": 229,
+    "categoria": "SHAPE",
+    "enunciadoEs": "¿Qué figura posee exactamente 9 diagonales?",
+    "respuestaCorrectaEn": "HEPTAGON",
+    "opcionesEn": ["HEXAGON", "HEPTAGON", "OCTAGON", "PENTAGON", "NONAGON"]
+  },
+  {
+    "id": 230,
+    "categoria": "SHAPE",
+    "enunciadoEs": "Selecciona la figura que puede teselar el plano sin dejar huecos ni superposiciones.",
+    "respuestaCorrectaEn": "HEXAGON",
+    "opcionesEn": ["CIRCLE", "TRIANGLE", "HEXAGON", "OVAL", "PENTAGON"]
   }
 ]

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondoPantalla"
+    android:background="@drawable/bluebackground"
     android:orientation="vertical">
 
     <LinearLayout
@@ -33,7 +33,6 @@
             android:layout_width="140dp"
             android:layout_height="69dp"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/edit_text_radius"
             android:gravity="center"
             android:text="99"
             android:textSize="30dp" />
@@ -48,9 +47,10 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_vertical"
-            android:paddingRight="8dp"> <TextView
+            android:paddingRight="8dp">
+            <TextView
             android:id="@+id/labelNumRonda"
-            android:layout_width="40dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
             android:textSize="60dp"
@@ -63,7 +63,7 @@
                 android:gravity="center" />
             <TextView
                 android:id="@+id/labelNumTotalRondas"
-                android:layout_width="40dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="60dp"
