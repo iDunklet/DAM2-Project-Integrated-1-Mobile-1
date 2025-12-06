@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bluebackground">
+
+    <TextView
+        android:id="@+id/labelInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/paredInferior"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/paredSuperior"
+        app:layout_constraintTop_toTopOf="@+id/paredDerecha" />
+
+    <Button
+        android:id="@+id/buttonRondas10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_radius"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRondas5" />
+
+    <Button
+        android:id="@+id/buttonRegisterAceptar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/boton_verde"
+        android:text="@string/aceptar"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/paredIzquierda"
+        app:layout_constraintEnd_toStartOf="@+id/paredInferior"
+        app:layout_constraintStart_toStartOf="@+id/paredSuperior" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/paredDerecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/paredSuperior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="21dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/paredIzquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/paredInferior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.955" />
+
+    <Button
+        android:id="@+id/buttonNivel2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_radius"
+        android:gravity="center"
+        android:text="@string/nivel_2"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNivel3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12" />
+
+    <Button
+        android:id="@+id/buttonNivel1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_radius"
+        android:gravity="center"
+        android:text="@string/nivel_1"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNivel2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12" />
+
+    <Button
+        android:id="@+id/buttonNivel3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_radius"
+        android:gravity="center"
+        android:text="@string/nivel_3"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegisterAceptar"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12" />
+
+    <Button
+        android:id="@+id/buttonRondas15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_radius"
+        android:gravity="center"
+        android:text="15"
+
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRondas10" />
+
+    <Button
+        android:id="@+id/buttonRondas5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/edit_text_radius"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/labelRondas" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <TextView
+        android:id="@+id/labelNivel"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/dificultad"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNivel1"
+        app:layout_constraintEnd_toStartOf="@+id/paredInferior"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/paredSuperior"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRondas15"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/labelRondas"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/rondas"
+        android:textColor="@color/white"
+        app:layout_constraintDimensionRatio="10:1"
+        app:layout_constraintEnd_toStartOf="@+id/paredInferior"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/paredSuperior"
+        app:layout_constraintTop_toBottomOf="@+id/labelInicio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

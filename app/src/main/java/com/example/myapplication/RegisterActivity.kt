@@ -42,8 +42,10 @@ class RegisterActivity : AppCompatActivity() {
         mediaPlayer.start()
 
         // Inicialización de Vistas
-        val newPlayerName = findViewById<EditText>(R.id.TextboxNombre)
-        val newPlayerAge = findViewById<EditText>(R.id.TextboxEdad)
+        //val newPlayerName = findViewById<EditText>(R.id.TextboxNombre)
+        //val newPlayerAge = findViewById<EditText>(R.id.TextboxEdad)
+        val newPlayerName = "player"
+        val newPlayerAge = 0
         val btnAceptar = findViewById<Button>(R.id.buttonRegisterAceptar)
 
 
@@ -83,9 +85,6 @@ class RegisterActivity : AppCompatActivity() {
 
 
         btnAceptar.setOnClickListener {
-            if (validateInputs(newPlayerName, newPlayerAge)) {
-
-
                 val nuevaPartida = UserGameData(
                     rondas = numeroRondas,
                     dificultad = nivelDificultad,
@@ -96,8 +95,8 @@ class RegisterActivity : AppCompatActivity() {
                     gameTime = 0
                 )
                 val nuevoJugador = Jugador(
-                    nombre = newPlayerName.text.toString(),
-                    edad = newPlayerAge.text.toString().toInt(),
+                    nombre = newPlayerName.toString(),
+                    edad = newPlayerAge,
                     partidas = mutableListOf()
                 )
                 nuevoJugador.partidas.add(nuevaPartida)
@@ -118,7 +117,6 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
         }
-    }
 
     private fun handleRoundSelection(boton: Button, rondas: Int) {
         MetodosUniversal.setSelectionStyle(

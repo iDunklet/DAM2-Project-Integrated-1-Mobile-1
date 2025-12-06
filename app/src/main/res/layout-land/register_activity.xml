@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bluebackground">
+
+    <TextView
+        android:id="@+id/labelInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/inicio"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        >
+
+        <TextView
+            android:id="@+id/labelNombre"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="250dp"
+            android:text="@string/nombre"
+            android:textSize="45sp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/TextboxNombre"
+            android:layout_width="508dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints="¿Cómo te llamas?"
+            android:inputType="text"
+            android:textSize="35sp"
+            android:background="@drawable/edit_text_radius" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        >
+
+        <TextView
+            android:id="@+id/labelEdad"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/edad"
+            android:textSize="45sp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/TextboxEdad"
+            android:layout_width="220dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="¿Cuántos años tienes?"
+            android:background="@drawable/edit_text_radius"
+            android:inputType="number"
+            android:textSize="35sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start" >
+
+        <TextView
+            android:id="@+id/labelRondas"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/rondas"
+            android:textSize="45sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonRondas5"
+            android:layout_width="130dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_radius"
+            android:text="5"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonRondas10"
+            android:layout_width="130dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_radius"
+            android:text="10"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonRondas15"
+            android:layout_width="130dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edit_text_radius"
+            android:text="15"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/dificultad"
+        android:textSize="50sp"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonNivel1"
+            android:layout_width="180dp"
+            android:layout_height="68dp"
+            android:background="@drawable/edit_text_radius"
+            app:backgroundTint="@null"
+            android:layout_marginEnd="20dp"
+            android:text="@string/nivel_1"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonNivel2"
+            android:layout_width="180dp"
+            android:layout_height="68dp"
+            android:background="@drawable/edit_text_radius"
+            app:backgroundTint="@null"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/nivel_2"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonNivel3"
+            android:layout_width="200dp"
+            android:layout_height="68dp"
+            android:background="@drawable/edit_text_radius"
+            app:backgroundTint="@null"
+            android:layout_marginStart="20dp"
+            android:text="@string/nivel_3"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRegisterAceptar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/boton_verde"
+        app:backgroundTint="@null"
+        android:text="@string/aceptar"
+        android:textSize="35sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>
