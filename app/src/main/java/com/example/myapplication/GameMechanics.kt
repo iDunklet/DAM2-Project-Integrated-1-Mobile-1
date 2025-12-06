@@ -190,10 +190,40 @@ class GameMechanics(private val context: Context) {
     /** Normaliza números escritos como texto para la categoría NUMBER */
     fun isAnswerCorrect(selected: String, correct: String): Boolean {
         val map = mapOf(
-            "0" to "ZERO", "1" to "ONE", "2" to "TWO", "3" to "THREE", "4" to "FOUR",
-            "5" to "FIVE", "6" to "SIX", "7" to "SEVEN", "8" to "EIGHT", "9" to "NINE",
-            "10" to "TEN", "12" to "TWELVE", "16" to "SIXTEEN", "25" to "TWENTY-FIVE",
-            "30" to "THIRTY", "32" to "THIRTY-TWO", "56" to "FIFTY-SIX"
+            "0" to "ZERO",
+            "1" to "ONE",
+            "2" to "TWO",
+            "3" to "THREE",
+            "4" to "FOUR",
+            "5" to "FIVE",
+            "6" to "SIX",
+            "7" to "SEVEN",
+            "8" to "EIGHT",
+            "9" to "NINE",
+            "10" to "TEN",
+            "11" to "ELEVEN",
+            "12" to "TWELVE",
+            "13" to "THIRTEEN",
+            "14" to "FOURTEEN",
+            "15" to "FIFTEEN",
+            "16" to "SIXTEEN",
+            "17" to "SEVENTEEN",
+            "18" to "EIGHTEEN",
+            "19" to "NINETEEN",
+            "20" to "TWENTY",
+            "21" to "TWENTY-ONE",
+            "22" to "TWENTY-TWO",
+            "23" to "TWENTY-THREE",
+            "24" to "TWENTY-FOUR",
+            "25" to "TWENTY-FIVE",
+            "30" to "THIRTY",
+            "32" to "THIRTY-TWO",
+            "35" to "THIRTY-FIVE",
+            "40" to "FORTY",
+            "49" to "FORTY-NINE",
+            "56" to "FIFTY-SIX",
+            "64" to "SIXTY-FOUR",
+            "70" to "SEVENTY"
                        )
         val normalizedSelected = map[selected.uppercase()] ?: selected.uppercase()
         return normalizedSelected == correct.uppercase()
@@ -219,6 +249,16 @@ class GameMechanics(private val context: Context) {
             "THIRTY" -> "30"
             "THIRTY-TWO" -> "32"
             "FIFTY-SIX" -> "56"
+            "ELEVEN" -> "11"
+            "FOURTEEN" -> "14"
+            "EIGHTEEN" -> "18"
+            "TWENTY" -> "20"
+            "TWENTY-ONE" -> "21"
+            "FORTY" -> "40"
+            "FORTY-NINE" -> "49"
+            "SIXTY-FOUR" -> "64"
+            "THIRTY-FIVE" -> "35"
+            "SEVENTY" -> "70"
             else -> option
         }
     }
@@ -245,6 +285,8 @@ class GameMechanics(private val context: Context) {
             "PYRAMID" -> R.drawable.shape_pyramid
             "REGULAR_POLYGON" -> R.drawable.shape_regular_polygon
             "IRREGULAR_POLYGON" -> R.drawable.shape_irregular_polygon
+            "HEART" -> R.drawable.shape_heart
+
             else -> R.drawable.shape_default
         }
     }
@@ -264,6 +306,7 @@ class GameMechanics(private val context: Context) {
             "GREY" -> R.color.gray
             "CYAN" -> R.color.cyan
             "MAGENTA" -> R.color.magenta
+            "PINK" -> R.color.pink
             else -> R.color.gray
         }
     }

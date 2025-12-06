@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -46,6 +47,9 @@ class PythonActivity : AppCompatActivity() {
         btnRunPython.setOnClickListener {
             runPythonAnalysis()
         }
+
+        val btnBack: ImageButton = findViewById(R.id.IconBack)
+        btnBack.setOnClickListener { finish() }
     }
 
     private fun runPythonAnalysis() {
